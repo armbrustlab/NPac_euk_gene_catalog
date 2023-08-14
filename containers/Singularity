@@ -1,0 +1,27 @@
+Bootstrap: docker
+From: python:3
+Stage: spython-base
+
+%files
+requirements.txt requirements.txt
+
+%labels
+MAINTAINER Stephen Blaskowski
+
+%post
+# install dependencies
+apt-get update && apt-get install -y libblas-dev liblapack-dev gfortran
+pip3 install mkl
+# install python packages
+pip3 install --no-cache-dir -r requirements.txt
+# make home directory
+mkdir -p /home
+cd /home
+
+%runscript
+cd /home
+exec /bin/bash "$@"
+
+%startscript
+cd /home
+exec /bin/bash "$@"

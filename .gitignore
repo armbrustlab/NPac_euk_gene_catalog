@@ -1,0 +1,28 @@
+# byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# data files
+*.gz
+
+# data, figures, and env directories
+data/
+figures/
+env/
+
+# jupyter notebook checkpoint files
+.ipynb_checkpoints/
+
+# .DS_Store files
+*.DS_Store
+
+# vscode files
+.vscode/
+
+# singularity images
+*.sif
+
+# embedding UMAP images 
+results/2020-09-06/figures/*
+results/2020-09-01/figures/*
+log*.txt
