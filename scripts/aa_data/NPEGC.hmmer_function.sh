@@ -45,7 +45,7 @@ cd ${NPEGC_DIR}/data/annotations/pfam
 
 function NPEGC_hmmer {
 # Define input FASTA
-INPUT_FASTA="/mnt/nfs/projects/ryan/NPacAssemblies_2021/pan-assembly/NPac.${STUDY}.bf100.id99.aa.fasta"
+INPUT_FASTA="NPac.${STUDY}.bf100.id99.aa.fasta"
 # hmmsearch call:
 hmmsearch --cut_tc --cpu $NCORES --domtblout $ANNOTATION_DIR/${STUDY}.Pfam35.domtblout.tab $HMM_PROFILE ${INPUT_FASTA}
 # compress output file:
