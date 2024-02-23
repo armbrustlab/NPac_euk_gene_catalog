@@ -1,3 +1,5 @@
+# AUTHOR: Ryan D. Groussman
+
 import pandas as pd
 import os
 
