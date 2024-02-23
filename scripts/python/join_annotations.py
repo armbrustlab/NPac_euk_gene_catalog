@@ -87,6 +87,7 @@ def final_joined_stats(joined_table_merged):
 
 
 # define local project path and ID
+# EXAMPLE USING G1PA LOCAL DIRECTORY AND PROJECT ID
 os.chdir("/mnt/nfs/projects/armbrust-metat/gradients1/g1_station_pa_metat/assemblies/annotations")
 project_id = "G1PA" 
 
