@@ -1,8 +1,5 @@
 # North Pacific Eukaryotic Gene Catalog (NPEGC)
 
-![NPEGC cruise tracks](https://github.com/armbrustlab/NPac_euk_gene_catalog/blob/main/images/fig1_cruise_tracks.png)
-Sample sites for metatranscriptomes in the North Pacific Eukaryotic Gene Catalog against a map of ocean chlorophyll concentration
-
 ## Overview
 
 The North Pacific Eukaryotic Gene Catalog (NPEGC) is a compilation of metatranscriptome sequence data and annotations derived from 261 samples collected from four oceanographic research cruises in the North Pacific Ocean. 
@@ -12,6 +9,11 @@ The North Pacific Eukaryotic Gene Catalog (NPEGC) is a compilation of metatransc
 - 182 million transcript contigs (clustered at 99% protein identity)
 - Taxonomic and functional annotations
 - Read abundance data
+
+
+![NPEGC cruise tracks](https://github.com/armbrustlab/NPac_euk_gene_catalog/blob/main/images/fig1_cruise_tracks.png)
+
+Sample sites for metatranscriptomes in the North Pacific Eukaryotic Gene Catalog
 
 ## Data Sources
 
