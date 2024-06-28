@@ -59,10 +59,6 @@ Additional metadata and associated datasets for the Gradients 1 cruise are avail
 - Sequences with Pfam ID: 9M
 - Unique Pfam IDs: 9,017
 
-## Usage Notes
-
-For detailed instructions on how to use this data, please refer to the main [NPEGC Usage Notes](../../usage_notes.md).
-
 ## Citation
 
 If you use this data in your research, please cite:
