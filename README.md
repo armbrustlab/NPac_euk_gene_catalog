@@ -39,6 +39,13 @@ Sample sites for metatranscriptomes in the North Pacific Eukaryotic Gene Catalog
 
 Additional metadata and associated datasets are available on the [Simons CMAP ocean data portal](https://simonscmap.com/).
 
+- SCOPE Diel1 associated data: [https://simonscmap.com/catalog/cruises/KM1513](https://simonscmap.com/catalog/cruises/KM1513)
+- Gradients 1 associated data: [https://simonscmap.com/catalog/cruises/KOK1606](https://simonscmap.com/catalog/cruises/KOK1606)
+- Gradients 2 associated data: [https://simonscmap.com/catalog/cruises/MGL1704](https://simonscmap.com/catalog/cruises/MGL1704)
+- Gradients 3 associated data: [https://simonscmap.com/catalog/cruises/KM1906](https://simonscmap.com/catalog/cruises/KM1906)
+
+Additional metadata for the Gradients cruises can be found here: [http://scope.soest.hawaii.edu/data/gradients/gradients.html](http://scope.soest.hawaii.edu/data/gradients/gradients.html)
+
 ## Citation
 
 If you use this data in your research, please cite:
