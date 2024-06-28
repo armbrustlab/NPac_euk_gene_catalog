@@ -21,6 +21,8 @@ The G3 Diel cruise study is part of the North Pacific Eukaryotic Gene Catalog (N
 
 ## Data Products
 
+Raw Illumina read data is deposited in NCBI SRA for Gradients 3-diel under BioProject: [PRJNA1077380](https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA1077380)
+
 ### 1. Raw Metatranscriptome Assembly
 - File: `G3_diel.KM1906.PA.assemblies.tar.gz`
 - [Link to Zenodo repository](https://zenodo.org/records/10699458)
