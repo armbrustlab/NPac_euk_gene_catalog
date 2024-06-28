@@ -34,6 +34,61 @@ Sample sites for metatranscriptomes in the North Pacific Eukaryotic Gene Catalog
 ### 3. Processed Nucleotide Metatranscripts and Read Counts
 - [Link to Zenodo repository](https://zenodo.org/records/10570449)
 
+## Script Index
+
+### Universal Scripts
+
+These scripts are used across all studies in the North Pacific Eukaryotic Gene Catalog:
+
+1. [Illumina_QC_AWS.sh](https://github.com/armbrustlab/NPac_euk_gene_catalog/blob/main/scripts/Illumina_QC_AWS.sh)
+   - Description: Performs quality control and trimming of raw Illumina sequencing data using Trimmomatic.
+
+2. [NPEGC.6tr_frame_selection_clustering.sh](https://github.com/armbrustlab/NPac_euk_gene_catalog/blob/main/scripts/aa_data/NPEGC.6tr_frame_selection_clustering.sh)
+   - Description: Translates nucleotide sequences, selects the longest coding frame(s), and clusters protein sequences at 99% identity.
+
+3. [NPEGC.diamond_taxonomy.log.sh](https://github.com/armbrustlab/NPac_euk_gene_catalog/blob/main/scripts/aa_data/NPEGC.diamond_taxonomy.log.sh)
+   - Description: Assigns taxonomic identifiers to protein sequences using DIAMOND alignment against the MarFERReT + MARMICRODB database.
+
+4. [NPEGC.hmmer_function.sh](https://github.com/armbrustlab/NPac_euk_gene_catalog/blob/main/scripts/aa_data/NPEGC.hmmer_function.sh)
+   - Description: Annotates protein sequences with protein families using HMMER against the Pfam database.
+
+5. [NPEGC.nt_kallisto_counts.sh](https://github.com/armbrustlab/NPac_euk_gene_catalog/blob/main/scripts/nt_data/NPEGC.nt_kallisto_counts.sh)
+   - Description: Quantifies transcript abundances by aligning short reads to assembled transcripts using kallisto.
+
+6. [aggregate_kallisto_counts.R](https://github.com/armbrustlab/NPac_euk_gene_catalog/blob/main/scripts/nt_data/aggregate_kallisto_counts.R)
+   - Description: Consolidates kallisto output files, joining sequence length and estimated count values for each project's metatranscriptome.
+
+### Study-Specific Scripts
+
+Each study (G1PA, G2PA, G3PA, G3PA_diel, D1PA) has two specific scripts:
+
+1. `{STUDY_ID}.process_short_reads.sh`
+   - Description: Performs quality control and preprocessing of raw sequencing data for the specific study.
+
+2. `{STUDY_ID}.trinity_assemblies.sh`
+   - Description: Uses Trinity to perform de novo assembly of metatranscriptomes for the specific study.
+
+Links to study-specific scripts:
+
+- Gradients 1 (G1PA):
+  - [G1PA.process_short_reads.sh](https://github.com/armbrustlab/NPac_euk_gene_catalog/blob/main/scripts/G1PA.process_short_reads.sh)
+  - [G1PA.trinity_assemblies.sh](https://github.com/armbrustlab/NPac_euk_gene_catalog/blob/main/scripts/G1PA.trinity_assemblies.sh)
+
+- Gradients 2 (G2PA):
+  - [G2PA.process_short_reads.sh](https://github.com/armbrustlab/NPac_euk_gene_catalog/blob/main/scripts/G2PA.process_short_reads.sh)
+  - [G2PA.trinity_assemblies.sh](https://github.com/armbrustlab/NPac_euk_gene_catalog/blob/main/scripts/G2PA.trinity_assemblies.sh)
+
+- Gradients 3 (G3PA):
+  - [G3PA_UW.process_short_reads.sh](https://github.com/armbrustlab/NPac_euk_gene_catalog/blob/main/scripts/G3PA_UW.process_short_reads.sh)
+  - [G3PA_UW.trinity_assemblies.sh](https://github.com/armbrustlab/NPac_euk_gene_catalog/blob/main/scripts/G3PA_UW.trinity_assemblies.sh)
+
+- G3 Diel (G3PA_diel):
+  - [G3PA_diel.process_short_reads.sh](https://github.com/armbrustlab/NPac_euk_gene_catalog/blob/main/scripts/G3PA_diel.process_short_reads.sh)
+  - [G3PA_diel.trinity_assemblies.sh](https://github.com/armbrustlab/NPac_euk_gene_catalog/blob/main/scripts/G3PA_diel.trinity_assemblies.sh)
+
+- Diel1 (D1PA):
+  - [D1PA.process_short_reads.sh](https://github.com/armbrustlab/NPac_euk_gene_catalog/blob/main/scripts/D1PA.process_short_reads.sh)
+  - [D1PA.trinity_assemblies.sh](https://github.com/armbrustlab/NPac_euk_gene_catalog/blob/main/scripts/D1PA.trinity_assemblies.sh)
 
 ## Associated Data
 
