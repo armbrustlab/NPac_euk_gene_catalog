@@ -21,6 +21,8 @@ The Gradients 2 (G2PA) cruise study is part of the North Pacific Eukaryotic Gene
 
 ## Data Products
 
+Raw Illumina read data is deposited in NCBI SRA for Gradients 2 under BioProject: [PRJNA1076191](https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA1076191)
+
 ### 1. Raw Metatranscriptome Assembly
 - File: `Gradients2.MGL1704.PA.assemblies.tar.gz`
 - [Link to Zenodo repository](https://zenodo.org/records/10699458)
