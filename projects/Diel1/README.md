@@ -21,6 +21,8 @@ The Diel1 cruise study is part of the North Pacific Eukaryotic Gene Catalog (NPE
 
 ## Data Products
 
+Raw Illumina read data is deposited in NCBI SRA for Diel1 under [BioProject PRJNA492142](https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA492142)
+
 ### 1. Raw Metatranscriptome Assembly
 - [Link to Zenodo repository](https://zenodo.org/records/5009803)
 
