@@ -4,7 +4,7 @@
 
 The Gradients 3 (G3PA) cruise study is part of the North Pacific Eukaryotic Gene Catalog (NPEGC), providing metatranscriptome data from samples collected in the North Pacific Ocean during April 2019.
 
-This page summarizes surface transect samples from the Gradients 3 cruise. Information for the Gradients 3 Diel study can be found here: [G3PA_diel/README.md](https://github.com/armbrustlab/NPac_euk_gene_catalog/edit/main/projects/G3PA_diel/README.md)
+This page summarizes surface transect samples from the Gradients 3 cruise. Information for the Gradients 3 Diel study can be found here: [G3PA_diel project page](https://github.com/armbrustlab/NPac_euk_gene_catalog/tree/main/projects/G3PA)
 
 
 ## Cruise Details
