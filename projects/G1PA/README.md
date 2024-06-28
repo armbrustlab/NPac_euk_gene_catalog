@@ -21,6 +21,9 @@ The Gradients 1 (G1PA) cruise study is part of the North Pacific Eukaryotic Gene
 
 ## Data Products
 
+Raw Illumina read data is deposited in NCBI SRA for Gradients 1 under [BioProject PRJNA690573](https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA690573)
+
+
 ### 1. Raw Metatranscriptome Assembly
 - File: `Gradients1.KOK1606.PA.assemblies.tar.gz`
 - [Link to Zenodo repository](https://zenodo.org/records/10699458)
