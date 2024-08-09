@@ -29,7 +29,7 @@ Sample sites for metatranscriptomes in the North Pacific Eukaryotic Gene Catalog
 - [Link to Zenodo repository](https://zenodo.org/records/10699458)
 
 ### 2. Processed Protein Contigs and Annotations
-- [Link to Zenodo repository](https://zenodo.org/records/10472590)
+- [Link to Zenodo repository](https://zenodo.org/records/12630398)
 
 ### 3. Processed Nucleotide Metatranscripts and Read Counts
 - [Link to Zenodo repository](https://zenodo.org/records/10570449)
