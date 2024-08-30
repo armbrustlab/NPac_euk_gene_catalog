@@ -1,4 +1,4 @@
-#### G3 depth trinity assembly code.
+#### G3 depth polyA trinity assembly code.
 
 #################################################################################
 # 0. Sample lists
