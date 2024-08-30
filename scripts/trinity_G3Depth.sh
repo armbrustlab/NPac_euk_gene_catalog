@@ -1,4 +1,5 @@
 #### G3 depth polyA trinity assembly code.
+###Elaina Thomas
 
 #################################################################################
 # 0. Sample lists
