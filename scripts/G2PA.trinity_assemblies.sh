@@ -1,7 +1,7 @@
 
 # AUTHOR: Ryan D. Groussman
 
-#### PART 1: BRIDGES CLUSTER ASSEMBLIES ####
+#### PART 1: BRIDGES CLUSTER ASSEMBLIES -RF-stranded ####
 
 # STEP 1: LOG IN TO XSDEDE / BRIDGES
 ssh -l username bridges.psc.xsede.org
@@ -56,7 +56,7 @@ cat "$SAMPLE"*.1.paired.trim.fastq.gz > combined/"$SAMPLE".all.1.fastq.gz
 cat "$SAMPLE"*.2.paired.trim.fastq.gz > combined/"$SAMPLE".all.2.fastq.gz
 done
 
-# SUBMIT SLURM SCRIPTS FOR ASSEMBLY:
+# SUBMIT SLURM SCRIPTS FOR ASSEMBLY (https://github.com/armbrustlab/NPac_euk_gene_catalog/tree/main/scripts/slurm):
 # these should all be fine to complete in under 10 days:
 sbatch -p LM -t 10-00:00:00 --mem=3000GB G2PA.S02C1.15m.0_2um.trinity.slurm
 "Submitted batch job 10279923"
