@@ -4,7 +4,7 @@
 
 # AUTHOR: Ryan D. Groussman
 
-###### G3PA ASSEMBLIES #########
+###### G3PA ASSEMBLIES - unstranded #########
 
 #############
 ## 06/25/21 #
@@ -45,7 +45,7 @@ IMG_DIR="${ASSEMBLY_DIR}/containers"
 PAIRED_SEQS_DIR="${ASSEMBLY_DIR}/data/seq/PE"
 
 
-# Now let's build a new Trinity function to include the cleaning step (sans upload)
+# Now let's build a new Trinity function to include the cleaning step (sans upload) - note that we use the default - unstranded - assembly setting
 
 function G3PA_trinity {
 mkdir ${MOUNT}/${SAMPLE}
