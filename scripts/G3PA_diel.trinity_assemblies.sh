@@ -2,7 +2,7 @@
 #### G3PA_DIEL ####
 ###################
 
-# Begin Gradients 3 Diel study Trinity assemblies
+# Begin Gradients 3 Diel study Trinity assemblies - unstranded
 
 # 44 samples in total
 
@@ -38,7 +38,7 @@ IMG_DIR="${ASSEMBLY_DIR}/containers"
 mkdir ${OUTPUT_DIR}/trinity_files
 
 # For this project, separate lanes of PE reads are already combined.
-# NOTE we are running these with --max_memory 900G
+# NOTE we are running these with --max_memory 900G and that we use the default - unstranded - assembly setting
 
 function G3PA_trinity_diel {
 mkdir ${MOUNT}/${SAMPLE}
