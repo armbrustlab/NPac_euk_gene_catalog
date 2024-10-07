@@ -1,5 +1,5 @@
 
-### Gradients 1 Poly-A+ (PA) metatranscriptome assembly
+### Gradients 1 Poly-A+ (PA) metatranscriptome assembly -RF-stranded
 
 # AUTHOR: Ryan D. Groussman
 
@@ -51,7 +51,7 @@ zcat $right_reads >> S02C1_3um.right.fastq
 # take these new left & right reads and drop them in a new script for 3um:
 Trinity_gradients1.1b.slurm > Trinity_gradients1.1c.slurm
 
-# submit the slurm script
+# submit the slurm script (https://github.com/armbrustlab/NPac_euk_gene_catalog/tree/main/scripts/slurm)
 sbatch -p LM -t 24:00:00 --mem=3000GB Trinity_gradients1.1c.slurm
 # "Submitted batch job 991087"
 # Check progress:
