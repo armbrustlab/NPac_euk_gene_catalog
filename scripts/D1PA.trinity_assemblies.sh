@@ -1,5 +1,5 @@
 
-# For assembly of Diel1 transcripts on PSC Bridges
+# For RF-stranded assembly of Diel1 transcripts on PSC Bridges
 # From the 2015 SCOPE Diel Cruise
 # February 2017
 
@@ -69,7 +69,7 @@ cat_fastq S"$i"C1
 done
 
 
-# Submit slurm scripts for Trinity assembly runs:
+# Submit slurm scripts for Trinity assembly runs (https://github.com/armbrustlab/NPac_euk_gene_catalog/tree/main/scripts/slurm):
 sbatch -p LM -t 5-00:00:00 --mem=3000GB Trinity_diel1.all_S06C1.slurm
 # "Submitted batch job 1114795"
 sbatch -p LM -t 5-00:00:00 --mem=3000GB Trinity_diel1.all_S07C1.slurm
