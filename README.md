@@ -97,4 +97,4 @@ Additional metadata for the Gradients cruises can be found here: [http://scope.s
 
 If you use this data in your research, please cite:
 
-[Citation information to be added upon publication]
+Groussman, R. D., Coesel, S. N., Durham, B. P., Schatz, M. J. & Armbrust, E. V. The North Pacific Eukaryotic Gene Catalog of metatranscriptome assemblies and annotations. Sci. Data 11, 1161 (2024). doi:10.1038/s41597-024-04005-5
