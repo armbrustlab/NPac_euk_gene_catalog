@@ -1,0 +1,46 @@
+# Ryan Groussman
+# Armbrust Lab, University of Washington
+# July 2016
+
+# 1. Use bowtie2-build to make an index of the custom standards.
+# this only needs to be done once. 
+
+bowtie2-build CustomStandardSequences.fasta CustomStandards
+
+# 2. Then you can run bowtie2 using this standards index
+# against all of your merged reads like so:
+# make a directory for the output
+
+mkdir standard_counts
+
+# declare the reference index ($REF) and the directory for output ($SAM_DIR)
+# You’ll need to change these directories to your own folders.
+
+REF="/mnt/nfs/projects/Gradients/standard_idx/CustomStandards"
+SAM_DIR="/mnt/nfs/Gradients/merged/standard_counts"
+
+# loop through all of the *.extendedFrags.fastq.gz files (merged fragments)
+
+for fastq in $(ls *.extendedFrags.fastq.gz); do
+echo $fastq
+bowtie2 -x $REF -U $fastq --no-unal -p 12 -S $SAM_DIR/"$fastq".sam >> $SAM_DIR/"$fastq.bt_std.log" 2>&1
+done
+
+# 3. Now you can compile the counts. The output gives you a separate file
+# for each of the samples and I have a script that combines them into one:
+# the python script ‘count_custom_standards.py’
+
+cd ${SAM_DIR}
+for sam in $(ls *sam); do
+echo $sam
+count_custom_standards.py $sam >> G2NS.standard_counts.csv
+done
+
+# 4. Lastly, this is an older script and I didn’t write in a function to add
+# the header. I manually add this header to the output file:
+
+# “sample_name	BPDExtraSmall1	BPDExtraSmall2	BPDSmall1	BPDSmall2	BPDMedium1	BPDMedium2	BPDLarge1	BPDLarge2	SmallStandard1	SmallStandard2	MediumStandard1	MediumStandard2	LargeStandard1	LargeStandard2”
+
+# this corresponds to the column order in the output data.
+
+# 5. This is the format of the raw standard counts. Proceed with Calculate_Norm_Factors.R
